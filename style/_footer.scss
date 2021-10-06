@@ -1,0 +1,22 @@
+footer {
+    background-color: #282828;
+    text-align: center;
+    ul {
+        display: flex;
+        justify-content: center;
+        .about {
+            padding: 0 1.5em;
+            padding-bottom: 3em;
+            font-family: $barlow;
+            color: $dkblue;
+        }
+
+        .social {
+            padding: 0 0.5em;
+        }
+    }
+     img{
+         padding: 2em 0;
+     }
+
+}
