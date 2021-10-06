@@ -1,14 +1,18 @@
 footer {
     background-color: #282828;
     text-align: center;
+    text-transform: uppercase;
+    font-family: $poppins;
     ul {
         display: flex;
+        
         justify-content: center;
+        list-style-type: none;
         .about {
             padding: 0 1.5em;
             padding-bottom: 3em;
-            font-family: $barlow;
-            color: $dkblue;
+            font-family: $poppins;
+            
         }
 
         .social {
