@@ -1,23 +1,47 @@
-footer {
-    background-color: $Darkgrey;
-    text-align: center;
-    color: white;
+@media screen and (max-width: 410px) {
+    footer {
+        .abt {
+                display: flex;
+                flex-direction: column;
+                
+                li {
+                    padding: 0.5em;
+                }
+            }
+
+        }
+        .scl {
+            display: flex;
+            flex-direction: row;
+            
+            li {
+                padding: 0.5em;
+            }
+        }
+        
+    }
     
-    ul {
-        display: flex;
-        justify-content: center;
-        text-transform: uppercase;
-        list-style-type: none;
+    @media screen and (min-width: 410px) {
         .about {
             padding: 0 1.5em;
             padding-bottom: 3em;
         }
-
+        
         .social {
             padding: 0 0.5em;
         }
+        
     }
-    a {
+    footer {
+        background-color: $Darkgrey;
+        text-align: center;
+        color: white;
+        
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+            a {
         font-family: $poppins;
         font-weight: 500;
         color: white;
@@ -25,6 +49,12 @@ footer {
     }
      img{
          padding: 2em 0;
+     }
+
+     h5 {
+         color: $Grey;
+         padding-bottom: 3em;
+         font-size: 12px;
      }
 
 }
