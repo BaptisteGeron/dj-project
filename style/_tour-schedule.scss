@@ -1,15 +1,51 @@
 main {
-    background-color: rgba(240, 133, 240, 0.301);
+    background-color: #eeeff4;
     padding: 5em;
 }
 .tourContainer {
     width: 75%;
     margin: auto;
-    padding: 2em;
     border-radius: 9px;
     background-color: white;
 }
-.TourMonths {
+.tourMonths {
     color: white;
-    background-color: black;
+    background-color:#212121;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    padding: 2em;
+    ul{
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+        li a{
+            color: white;
+            text-decoration: none;
+            font-family: $poppins;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+    }
+}
+.line {
+    border-left-color: black;
+    border-left-width: 3px;
+    border-left-style: solid;
+    li {
+        margin-left: 30px;
+        margin-bottom: 3em;
+    }
+    li::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        border: 3px solid black;
+        position: absolute;
+        margin-left: -45px;
+        margin-top: 10px;
+        
+    }
 }
