@@ -136,4 +136,27 @@ footer h5 {
   height: auto;
   padding: 1em 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+  border: none;
+  background-color: #8121e0;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
 /*# sourceMappingURL=style.css.map */
