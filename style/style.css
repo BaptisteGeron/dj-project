@@ -53,8 +53,7 @@ table {
 footer {
   background-color: #282828;
   text-align: center;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 footer ul {
@@ -64,17 +63,24 @@ footer ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-transform: uppercase;
   list-style-type: none;
 }
 
 footer ul .about {
   padding: 0 1.5em;
   padding-bottom: 3em;
-  font-family: "Poppins", sans-serif;
 }
 
 footer ul .social {
   padding: 0 0.5em;
+}
+
+footer a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
 }
 
 footer img {
