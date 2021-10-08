@@ -1,0 +1,34 @@
+.contact {
+    height: 2em;
+    width: auto;
+}
+.socialMedia {
+    height: 2em;
+    width: auto;
+    fill: black;
+}
+.illustration {
+    height: 3em;
+    width: auto;
+}
+
+.mainAbout {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    .discoverDJ {
+        background-image: url(/img/bg-circle-1.png);
+        background-position:center;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        background-color: aqua;
+        display: flex;
+        flex-wrap: wrap;
+        .discover {
+            width: 30%;
+            height: auto;
+        }
+    }
+}

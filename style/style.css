@@ -472,4 +472,51 @@ article .buyLink {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+
+.contact {
+  height: 2em;
+  width: auto;
+}
+
+.socialMedia {
+  height: 2em;
+  width: auto;
+  fill: black;
+}
+
+.illustration {
+  height: 3em;
+  width: auto;
+}
+
+.mainAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.mainAbout .discoverDJ {
+  background-image: url(/img/bg-circle-1.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainAbout .discoverDJ .discover {
+  width: 30%;
+  height: auto;
+}
 /*# sourceMappingURL=style.css.map */
