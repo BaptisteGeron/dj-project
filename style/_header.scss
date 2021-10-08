@@ -1,0 +1,89 @@
+header {
+    background-image: url(/img/banner-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.topNav {
+background-color: #28282800;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+    .navItems {
+        display: flex;
+        align-items: center;
+    }
+    ul {
+        display: flex;
+    }
+    ul li a{
+        color: white;
+        font-family: $poppins;
+        font-size: 10pt;
+        margin: 1em;
+        text-decoration: none;
+    }
+}
+.menuToggle {
+    display: none;
+    position: absolute;
+    height: 3rem;
+    width: auto;
+    top: 5px;
+    left: 5px;
+}
+
+.logo {
+    height: 3rem;
+    width: auto;
+}
+
+.headerSocial, .settings {
+    height: 1.5em;
+    width: auto;
+    fill: rgba(255, 255, 255, 0.767);
+}
+.settings {
+display: none;
+position: absolute;
+top: 5px;
+right: 5px;
+height: 3em;
+width: auto;
+}
+.mainTitleContainer {
+    height: 200px;
+   
+    display: flex;
+    .mainTitle {
+        margin: auto;
+        text-align: center;
+    }
+
+    .yellowDot {
+        color: yellow;
+        margin: 5pt;
+        font-size: 15pt;
+    }
+}
+
+
+
+
+h1 {
+    font-family: $poppins;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 25pt;
+    padding-bottom: 25pt;
+
+}
+h2 {
+    font-family: $poppins;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 10pt;
+}
+
