@@ -1,1 +1,15 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
 
+  figure {
+    text-align: center;
+    padding: 2em 2em;
+
+    img {
+      width: 370px;
+    }
+  }
+}
