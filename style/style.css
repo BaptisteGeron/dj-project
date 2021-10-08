@@ -202,6 +202,28 @@ main {
   background-color: white;
 }
 
+.tourContainer .marginDiv {
+  margin: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tourContainer .marginDiv .newLineDiv {
+  height: 100%;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tourContainer .marginDiv .newLineDiv .newLine {
+  height: 80%;
+  width: 30px;
+  border-left: 3px solid red;
+  background-color: red;
+}
+
 .tourMonths {
   color: white;
   background-color: #212121;
@@ -228,10 +250,17 @@ main {
   text-transform: uppercase;
 }
 
+.tourMonths ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1.5em;
+  text-decoration-thickness: 5px;
+  color: #8021df;
+}
+
 .line {
-  border-left-color: black;
-  border-left-width: 3px;
-  border-left-style: solid;
+  /*border-left-color: black;
+    border-left-width: 3px;
+    border-left-style: solid;*/
 }
 
 .line li {
