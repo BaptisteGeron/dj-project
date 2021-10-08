@@ -2,6 +2,10 @@
     height: 2em;
     width: auto;
 }
+.contactLink {
+    font-family: $poppins;
+    font-size: 1em;
+}
 .socialMedia {
     height: 2em;
     width: auto;
@@ -17,6 +21,14 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
+    .contactInfos {
+        h2 {
+            font-family: $poppins;
+            font-size: 1.5em;
+            padding-bottom: 1em;
+            border-bottom: 2px solid lightgrey;
+        }
+    }
     .discoverDJ {
         background-image: url(/img/bg-circle-1.png);
         background-position:center;
@@ -39,6 +51,18 @@
             width: 30%;
             height: auto;
             text-align: center;
+        }
+    }
+    .latestReleases {
+        h2 {
+            font-family: $poppins;
+            font-weight: 600;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        div {
+            display: flex;
+            justify-content: space-around;
         }
     }
 }
