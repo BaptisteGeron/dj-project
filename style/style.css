@@ -197,6 +197,7 @@ main {
 
 .tourContainer {
   width: 75%;
+  height: auto;
   margin: auto;
   border-radius: 9px;
   background-color: white;
@@ -207,11 +208,15 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .tourContainer .marginDiv .newLineDiv {
-  height: 100%;
-  width: auto;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,9 +224,11 @@ main {
 
 .tourContainer .marginDiv .newLineDiv .newLine {
   height: 80%;
-  width: 30px;
-  border-left: 3px solid red;
-  background-color: red;
+  border-left: 3px solid #c5c5c5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5em;
 }
 
 .tourMonths {
@@ -243,7 +250,7 @@ main {
 }
 
 .tourMonths ul li a {
-  color: white;
+  color: #c5c5c5;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
@@ -254,7 +261,9 @@ main {
   text-decoration: underline;
   text-underline-offset: 1.5em;
   text-decoration-thickness: 5px;
-  color: #8021df;
+  -webkit-text-decoration-color: #8021df;
+          text-decoration-color: #8021df;
+  color: white;
 }
 
 .line {
@@ -275,9 +284,46 @@ main {
   height: 20px;
   border-radius: 50%;
   background-color: white;
-  border: 3px solid black;
+  border: 3px solid #c5c5c5;
   position: absolute;
   margin-left: -45px;
   margin-top: 10px;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+article .date {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  color: #212121;
+}
+
+article .scheduleLocation {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+article .eventDescription {
+  font-family: "Poppins", sans-serif;
+  color: #212121;
+}
+
+article .buyLink {
+  text-transform: uppercase;
+  text-decoration: none;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
