@@ -84,7 +84,6 @@ table {
   }
   .social {
     padding: 0 0.5em;
-    width: 20px;
   }
 }
 
@@ -112,6 +111,7 @@ footer a {
 
 footer img {
   padding: 2em 0;
+  height: 20px;
 }
 
 footer h5 {
