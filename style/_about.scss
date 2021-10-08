@@ -26,9 +26,19 @@
         background-color: aqua;
         display: flex;
         flex-wrap: wrap;
-        .discover {
+        justify-content: space-around;
+        h2{
+            width: 100%;
+            font-family: $poppins;
+            font-size: 1.5em;
+            font-weight: 800;
+            color: black;
+            text-align: center;       
+            }
+        .dicover {
             width: 30%;
             height: auto;
+            text-align: center;
         }
     }
 }

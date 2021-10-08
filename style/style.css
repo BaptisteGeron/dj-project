@@ -513,10 +513,22 @@ article .buyLink {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.mainAbout .discoverDJ .discover {
+.mainAbout .discoverDJ h2 {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
+  color: black;
+  text-align: center;
+}
+
+.mainAbout .discoverDJ .dicover {
   width: 30%;
   height: auto;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
