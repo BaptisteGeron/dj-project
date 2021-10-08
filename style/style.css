@@ -182,6 +182,7 @@ html {
   background-color: #555;
 }
 
+<<<<<<< HEAD
 .carousel_box {
   width: 100%;
   height: 300px;
@@ -288,5 +289,305 @@ html {
   to {
     opacity: 1;
   }
+=======
+/*CSS reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  background-image: url(/img/banner-img.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.topNav {
+  background-color: #28282800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 1em;
+}
+
+.topNav .navItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topNav ul li a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 10pt;
+  margin: 1em;
+  text-decoration: none;
+}
+
+.menuToggle {
+  display: none;
+  position: absolute;
+  height: 3rem;
+  width: auto;
+  top: 5px;
+  left: 5px;
+}
+
+.logo {
+  height: 3rem;
+  width: auto;
+}
+
+.headerSocial, .settings {
+  height: 1.5em;
+  width: auto;
+  fill: rgba(255, 255, 255, 0.767);
+}
+
+.settings {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 3em;
+  width: auto;
+}
+
+.mainTitleContainer {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainTitleContainer .mainTitle {
+  margin: auto;
+  text-align: center;
+}
+
+.mainTitleContainer .yellowDot {
+  color: yellow;
+  margin: 5pt;
+  font-size: 15pt;
+}
+
+.mainTitleContainer a {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10pt;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 25pt;
+  padding-bottom: 25pt;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10pt;
+}
+
+main {
+  background-color: #eeeff4;
+  padding: 5em;
+}
+
+.tourContainer {
+  width: 75%;
+  height: auto;
+  margin: auto;
+  border-radius: 9px;
+  background-color: white;
+}
+
+.tourContainer .marginDiv {
+  margin: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.tourContainer .marginDiv .newLineDiv {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tourContainer .marginDiv .newLineDiv .newLine {
+  height: 80%;
+  border-left: 3px solid #c5c5c5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5em;
+}
+
+.tourMonths {
+  color: white;
+  background-color: #212121;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  padding: 2em;
+}
+
+.tourMonths ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tourMonths ul li a {
+  color: #c5c5c5;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.tourMonths ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1.5em;
+  text-decoration-thickness: 5px;
+  -webkit-text-decoration-color: #8021df;
+          text-decoration-color: #8021df;
+  color: white;
+}
+
+.line {
+  /*border-left-color: black;
+    border-left-width: 3px;
+    border-left-style: solid;*/
+}
+
+.line li {
+  margin-left: 30px;
+  margin-bottom: 3em;
+}
+
+.line li::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid #c5c5c5;
+  position: absolute;
+  margin-left: -45px;
+  margin-top: 10px;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+article .date {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  color: #212121;
+}
+
+article .scheduleLocation {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+article .eventDescription {
+  font-family: "Poppins", sans-serif;
+  color: #212121;
+}
+
+article .buyLink {
+  text-transform: uppercase;
+  text-decoration: none;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+>>>>>>> 9712f46b89dc6f3c58120f167643f3c959d7beed
 }
 /*# sourceMappingURL=style.css.map */
