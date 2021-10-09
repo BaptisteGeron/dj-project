@@ -1,19 +1,23 @@
 .contact {
-    height: 2em;
+    height: 1em;
     width: auto;
 }
 .contactLink {
     font-family: $poppins;
     font-size: 1em;
+    text-decoration: none;
+    color: black;
 }
 .socialMedia {
-    height: 2em;
+    height: 1.5em;
     width: auto;
     fill: black;
+    margin: 1em;
 }
 .illustration {
-    height: 3em;
-    width: auto;
+    height: auto;
+    width: 2em;
+    margin: 1em;
 }
 
 .mainAbout {
@@ -22,47 +26,102 @@
     margin: 0;
     padding: 0;
     .contactInfos {
+        display: flex;
+        gap: 5em;
+        padding: 5em;
+        div{
         h2 {
             font-family: $poppins;
             font-size: 1.5em;
             padding-bottom: 1em;
             border-bottom: 2px solid lightgrey;
         }
+        p {
+            font-family: $poppins;
+            font-size: 1em;
+            line-height: 1.5em;
+            margin-top: 1em;
+        }
+        #signature {
+            position: relative;
+            float: right;
+        }
+    }
     }
     .discoverDJ {
-        background-image: url(/img/bg-circle-1.png);
+        background-image: url(/img/bg-circle-2.png);
         background-position:center;
         background-attachment: fixed;
         background-size: cover;
-        width: 100%;
-        background-color: aqua;
+        padding: 4em;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         h2{
             width: 100%;
             font-family: $poppins;
-            font-size: 1.5em;
+            font-size: 2em;
             font-weight: 800;
             color: black;
-            text-align: center;       
-            }
-        .dicover {
-            width: 30%;
-            height: auto;
             text-align: center;
-        }
-    }
-    .latestReleases {
-        h2 {
+            margin-bottom: 1.5em;       
+            }
+        h3 {
             font-family: $poppins;
             font-weight: 600;
             font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+        p {
+            font-family: $poppins;
+            line-height: 1.5em;
+        }
+        
+        
+        .dicover {
+            width: 30%;
+            height: auto;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            padding: 1.5em;
+            div {
+                max-width: 20em;
+            }
+        }
+    }
+    .latestReleases {
+        padding: 4em;
+        h2 {
+            width: 100%;
+            font-family: $poppins;
+            font-size: 2em;
+            font-weight: 800;
+            color: black;
             text-align: center;
+            margin-bottom: 0.5em;
+        }
+        p {
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            font-family: $poppins;
+            line-height: 1.5em;
         }
         div {
             display: flex;
-            justify-content: space-around;
+            justify-content:center;
+        }
+        h4 {
+            font-family: $poppins;
+            line-height: 1.5em;
+            padding: 1em;
+            
+        }
+        h4::first-line {
+            font-size: 1.5em;
+            font-weight: 600;
+            line-height: 1.5em;
         }
     }
 }
