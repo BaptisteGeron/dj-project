@@ -76,7 +76,10 @@ transition-duration: 500ms;
 filter:drop-shadow(5px 5px 30px white);
 }
 .settings {
-display: none;
+display: none; 
+}
+.checkbox{
+    display: none;
 }
 .mainTitleContainer {
     height: 200px;
@@ -155,6 +158,7 @@ display: none;
         z-index: 5
     }
     .checkbox {
+        display:block;
         z-index: 6;
         height: 4em;
         width: 4em;
