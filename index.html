@@ -10,7 +10,54 @@
   <body>
   
     <header>
-
+      <nav class="topNav">
+        <img class="menuToggle" src="/img/icons/source_icons_menu.svg" alt="Menu toggle">
+        <input type="checkbox" class="checkbox" onclick="showMenu()">
+        <a href="/index.html"><img class="logo" src="/img/logo.png" alt="dj Angerone"></a>
+        <div class="navItems">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="discography.html">Discography</a></li>
+                <li><a href="tour-schedule.html">Tours</a></li>
+                <li><a href="gallery.html">Photos</a></li>
+            </ul>
+            <ul class="socialNav">
+                <li><a href=""><img class="headerSocial" src="/img/icons/facebook.svg" alt="facebook"></a></li>
+                <li><a href=""><img class="headerSocial" src="/img/icons/black-instagram.svg" alt="instagram"></a></li>
+                <li><a href=""><img class="headerSocial" src="/img/icons/twitter.svg" alt="twitter"></a></li>
+                <li><a href=""><img class="headerSocial" src="/img/icons/youtube.svg" alt="youtube"></a></li>
+            </ul>
+        </div>
+        <img class="settings" src="/img/icons/3-vertical-dots.svg" alt="Settings">
+    </nav>
+    <div class="mainTitleContainer">
+        <div class="mainTitle">
+            <h1>Tour Schedule</h1>
+            <h2><a href="/index.html">Home</a> <span class="yellowDot">&#07;</span>Tour Schedule</h2>
+        </div>
+    </div>
+    <div id="clockdiv">
+      <div id="nextEvent">
+          <h3>Next Gig</h3>
+         <p class="smalltext">Tickets for my next event are already available</p>
+      </div>
+    <div>
+      <span class="days"></span>
+      <div class="smalltext">Days</div>
+    </div>
+    <div>
+      <span class="hours"></span>
+      <div class="smalltext">Hours</div>
+    </div>
+    <div>
+      <span class="minutes"></span>
+      <div class="smalltext">Minutes</div>
+    </div>
+    <div>
+      <span class="seconds"></span>
+      <div class="smalltext">Seconds</div>
+    </div>
+  </div>
     </header>
     <main>
       <section class="carousel_box">
@@ -68,5 +115,6 @@
       <h5>© 2021 DI Angerone. Privacy Policy</h5>
     </footer>
     <script src="javascript/script.js"></script>
+    <script src="javascript/bscript.js"></script>
 </body>
 </html>
