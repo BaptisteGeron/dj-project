@@ -1,4 +1,4 @@
-//Configuration for the scroll to top button
+/*Configuration for the scroll to top button*/
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -19,7 +19,7 @@ function topFunction() {
 }
 
 
-//Carousel
+/*Carousel*/
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -48,3 +48,32 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " active";
 } 
+
+/*music-player*/
+const musicContainer = document.querySelector('.music_player')
+const playBtn = document.querySelector('#play')
+const audio = document.querySelector('#audio')
+const title = document.querySelector('#music-title')
+const progress = document.querySelector('.progress')
+const progressCtn = document.querySelector('.progress-container')$
+
+function playSong() {
+  musicContainer.classList.add('play')
+  playBtn.querySelector('i.fas').classList.remove('fa-play')
+  playBtn.querySelector('i.fas').classList.add('fa-pause')
+}
+function pauseSong() {
+  musicContainer.classList.remove('play')
+  playBtn.querySelector('i.fas').classList.remove('fa-pause')
+  playBtn.querySelector('i.fas').classList.add('fa-play')
+}
+//Event listeners
+playBtn.addEventListener('click', () => {
+  const isPlaying = musicContainer.classList.contains('play')
+
+  if(isPlaying){
+    pauseSong()
+  } else {
+    playSong()
+  }
+})
