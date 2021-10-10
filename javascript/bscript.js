@@ -34,4 +34,10 @@ function displayHiddenP(e) {
   divP.style.display = 'block';
   }
 
+  let pseudoParent = divTarget.parentNode;
+  
+  let beforeParent = window.getComputedStyle(pseudoParent,'::before').getPropertyValue('display');
+  console.log("hi" + beforeParent);
+  window.getComputedStyle(pseudoParent,'::before').getPropertyValue('display') = 'block';
+  console.log("hi" + beforeParent);
 }
