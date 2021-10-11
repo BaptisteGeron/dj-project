@@ -551,6 +551,12 @@ header h2 {
   }
 }
 
+#mainHeader {
+  background-image: url(/img/homapage-banner-img.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 .mainTourSchedule {
   background-color: #eeeff4;
   padding: 5em;
@@ -963,5 +969,36 @@ header h2 {
   padding-top: 5px;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.indexabout {
+  padding: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.indexabout #indexAboutDj {
+  border-radius: 10px;
+}
+
+.indexabout #indexAboutDj::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: purple;
+  position: absolute;
+  top: -5px;
+  left: 20px;
 }
 /*# sourceMappingURL=style.css.map */
