@@ -1,0 +1,56 @@
+.music_player {
+  position: relative;
+  margin: 0 20px;
+  background-color: $Darkgrey;
+  #music-title {
+    width: 100%;
+    font-family: $poppins;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 1;
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 1px;
+  }
+  .player-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .action-btn {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: #d2d6db;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-indent: 110%;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -webkit-transition: none;
+    transition: none;
+    white-space: nowrap;
+    width: 2.125em;
+  }
+
+  .progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 50%;
+  }
+
+  .progress {
+    background-color: $Grey;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+  }
+}

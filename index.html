@@ -16,20 +16,34 @@
       <!--Music PLayer-->
       <section class="music_player">
         <div id="new-single">New Single</div>
-        <h4 id="music-title"></h4>
-        <div class="progress-container">
-          <div class="progress"></div>
+        <svg id="music-title">
+          <text x="0" y="85%">Feel the Rhythm</text>
+        </svg>
 
-        <audio src="audio/Moose.mp3" id="audio"></audio>
-        </div>
+        <div class="player-container">         
+          <div class="progress-container">
+            <div class="progress"></div>
+            
+            <audio src="audio/Moose.mp3" id="audio"></audio>
+          </div>
+          
+          <div class="play-pause">
+            <button id="play" class="action-btn action-btn-big">
+              <i class="fas fa-play"></i>
+              <img src="img/icons/play-button-svgrepo-com.svg" alt="">
+            </button>
+          </div>
 
-        <div class="play-pause">
-          <button id="play" class="action-btn action-btn-big">
-            <i class="fas fa-play"></i>
-          </button>
+          <div class="msc-timer">
+            <span class="music-time"></span>
+            <span>-</span>
+            <span class="music-duration"></span>
+          </div>
+
         </div>
 
       </section>
+
       <!--Partners & Sponsors carousel-->
       <section class="carousel_box">
         <h2 class="sponsors">Partners & Sponsors</h2>
