@@ -1,0 +1,48 @@
+.fanbase {
+    width: 100%;
+    background-color: black;
+    font-family: $poppins;
+    font-size: 1em;
+    color: white;
+    padding: 5em;
+    display: flex;
+    gap: 5em;
+    .fanImg {
+        display: grid;
+        grid-template-areas: 
+       "a b"
+        "c d"
+        "e f";
+        #img1 {
+            grid-area: "a";
+        }
+        #img2 {
+            grid-area: "b";
+        }
+        #img3 {
+            grid-area: "c";
+        }
+        #img4 {
+            grid-area: "d";
+        }
+        #img5 {
+            grid-area: "e";
+        }
+        #img6 {
+            grid-area: "f";
+        }
+    }
+    h2 {
+        font-size: 3em;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 2em;
+        font-weight: 600;
+    }
+}
+.illustratinwhite {
+    width: 3em;
+    height: auto;
+    filter: invert(1);
+}
