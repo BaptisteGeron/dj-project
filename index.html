@@ -33,28 +33,46 @@
     <div class="mainTitleContainer">
         
     </div>
-    <div id="clockdiv">
-      <div id="nextEvent">
-          <h3>Next Gig</h3>
-         <p class="smalltext">Tickets for my next event are already available</p>
+    <div class="musicClock">
+      <div class="music">
+        <div class="player">
+        
+          <div class="music-box">
+              <input type="range" step="1" class="seekbar" value="0" min="0" max="100" oninput="handleSeekBar()">
+  
+              <audio class="music-element">
+                  <source src="https://hosseinghanbari.ir/other/music-player/autumn.mp3" type="audio/mp3">
+              </audio>
+              <span class="current-time">0:0</span><span class="duration">0:0</span>
+              <span class="play" onclick="handlePlay()">
+                <img class="material-icons" src="img/icons/play.svg" alt="play">
+              </span>
+          </div>
       </div>
-    <div>
-      <span class="days"></span>
-      <div class="smalltext">Days</div>
+      </div>
+      <div id="clockdiv">
+        <div id="nextEvent">
+            <h3>Next Gig</h3>
+           <p class="smalltext">Tickets for my next event are already available</p>
+        </div>
+      <div>
+        <span class="days"></span>
+        <div class="smalltext">Days</div>
+      </div>
+      <div>
+        <span class="hours"></span>
+        <div class="smalltext">Hours</div>
+      </div>
+      <div>
+        <span class="minutes"></span>
+        <div class="smalltext">Minutes</div>
+      </div>
+      <div>
+        <span class="seconds"></span>
+        <div class="smalltext">Seconds</div>
+      </div>
+        </div>
     </div>
-    <div>
-      <span class="hours"></span>
-      <div class="smalltext">Hours</div>
-    </div>
-    <div>
-      <span class="minutes"></span>
-      <div class="smalltext">Minutes</div>
-    </div>
-    <div>
-      <span class="seconds"></span>
-      <div class="smalltext">Seconds</div>
-    </div>
-  </div>
     </header>
     <main>
       <section class="indexAbout">
