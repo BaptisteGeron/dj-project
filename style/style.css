@@ -728,6 +728,215 @@ header h2 {
   }
 }
 
+.contact {
+  height: 1em;
+  width: auto;
+}
+
+.contactLink {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  color: black;
+}
+
+.socialMedia {
+  height: 1.5em;
+  width: auto;
+  fill: black;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin-left: 2em;
+}
+
+.illustration {
+  height: auto;
+  width: 40%;
+  margin: 1em;
+}
+
+.button {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: purple;
+  border-radius: 10px;
+  padding: 1em;
+  margin-top: 3em;
+  text-decoration: none;
+}
+
+.mainAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 5em;
+}
+
+.mainAbout .contactInfos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5em;
+}
+
+.mainAbout .contactInfos div h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+}
+
+.mainAbout .contactInfos div .line {
+  border-bottom: 3px solid lightgray;
+  width: 20%;
+}
+
+.mainAbout .contactInfos div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.mainAbout .contactInfos div li {
+  padding-right: 3em;
+  padding-top: 2.5em;
+}
+
+.mainAbout .contactInfos div .socialList {
+  width: 100%;
+}
+
+.mainAbout .contactInfos div p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1em;
+}
+
+.mainAbout .contactInfos div .signPlace {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mainAbout .contactInfos div #signature {
+  height: 4em;
+  width: auto;
+}
+
+.mainAbout .discoverDJ {
+  background-image: url(/img/bg-circle-2.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainAbout .discoverDJ h2 {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  color: black;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.mainAbout .discoverDJ h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.mainAbout .discoverDJ p {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
+}
+
+.mainAbout .discoverDJ .dicover {
+  width: 30%;
+  height: auto;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5em;
+}
+
+.mainAbout .discoverDJ .dicover div {
+  max-width: 20em;
+}
+
+.mainAbout .latestReleases {
+  padding: 4em;
+}
+
+.mainAbout .latestReleases h2 {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  color: black;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.mainAbout .latestReleases p {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
+}
+
+.mainAbout .latestReleases div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainAbout .latestReleases h4 {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
+  padding: 1em;
+}
+
+.mainAbout .latestReleases h4::first-line {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
 #clockdiv {
   font-family: "Poppins", sans-serif;
   font-weight: 900;

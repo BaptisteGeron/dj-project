@@ -1,0 +1,156 @@
+.contact {
+    height: 1em;
+    width: auto;
+}
+.contactLink {
+    font-family: $poppins;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+.socialMedia {
+    height: 1.5em;
+    width: auto;
+    fill: black;
+    filter: invert(1);
+    margin-left: 2em;
+}
+.illustration {
+    height: auto;
+    width: 40%;
+    margin: 1em;
+}
+.button {
+    font-family: $poppins;
+    color: white;
+    background-color: purple;
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 3em;
+    text-decoration: none;
+}
+.mainAbout {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 5em;
+    .contactInfos {
+        display: flex;
+        gap: 5em;
+        div{
+        h2 {
+            font-family: $poppins;
+            font-size: 1.5em;
+            padding-bottom: 1em;
+            
+        }
+        .line {
+            border-bottom: 3px solid lightgray;
+            width: 20%;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+        }
+        li {
+            padding-right: 3em;
+            padding-top:2.5em;
+        }
+        .socialList {
+            width: 100%;
+        }
+        p {
+            font-family: $poppins;
+            font-size: 1em;
+            line-height: 1.5em;
+            margin-top: 1em;
+        }
+        .signPlace {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        #signature {
+            height: 4em;
+            width: auto;
+        }
+    }
+    }
+    .discoverDJ {
+        background-image: url(/img/bg-circle-2.png);
+        background-position:center;
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 4em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        h2{
+            width: 100%;
+            font-family: $poppins;
+            font-size: 2em;
+            font-weight: 800;
+            color: black;
+            text-align: center;
+            margin-bottom: 1.5em;       
+            }
+        h3 {
+            font-family: $poppins;
+            font-weight: 600;
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+        p {
+            font-family: $poppins;
+            line-height: 1.5em;
+        }
+        
+        
+        .dicover {
+            width: 30%;
+            height: auto;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            padding: 1.5em;
+            div {
+                max-width: 20em;
+            }
+        }
+    }
+    .latestReleases {
+        padding: 4em;
+        h2 {
+            width: 100%;
+            font-family: $poppins;
+            font-size: 2em;
+            font-weight: 800;
+            color: black;
+            text-align: center;
+            margin-bottom: 0.5em;
+        }
+        p {
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            font-family: $poppins;
+            line-height: 1.5em;
+        }
+        div {
+            display: flex;
+            justify-content:center;
+        }
+        h4 {
+            font-family: $poppins;
+            line-height: 1.5em;
+            padding: 1em;
+            
+        }
+        h4::first-line {
+            font-size: 1.5em;
+            font-weight: 600;
+            line-height: 1.5em;
+        }
+    }
+}
