@@ -1042,4 +1042,64 @@ header h2 {
   margin-bottom: 5px;
   margin-right: 5px;
 }
+
+.fanbase {
+  width: 100%;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  color: white;
+  padding: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5em;
+}
+
+.fanbase .fanImg {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "a b" "c d" "e f";
+}
+
+.fanbase .fanImg #img1 {
+  grid-area: "a";
+}
+
+.fanbase .fanImg #img2 {
+  grid-area: "b";
+}
+
+.fanbase .fanImg #img3 {
+  grid-area: "c";
+}
+
+.fanbase .fanImg #img4 {
+  grid-area: "d";
+}
+
+.fanbase .fanImg #img5 {
+  grid-area: "e";
+}
+
+.fanbase .fanImg #img6 {
+  grid-area: "f";
+}
+
+.fanbase h2 {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.fanbase h3 {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.illustratinwhite {
+  width: 3em;
+  height: auto;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
 /*# sourceMappingURL=style.css.map */
