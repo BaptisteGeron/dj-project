@@ -83,8 +83,11 @@ function initializeClock(id, endtime) {
   updateClock();
   const timeinterval = setInterval(updateClock, 1000);
 }
+let concert = new Date(2022, 2, 13);
+let today = new Date();
+let waitingTime = concert.getTime() - today.getTime();
 
-const deadline = new Date(Date.parse(new Date()) + 66 * 24 * 60 * 60 * 1000);
+const deadline = new Date(Date.parse(new Date()) + waitingTime);
 initializeClock('clockdiv', deadline);
 
 //Player
