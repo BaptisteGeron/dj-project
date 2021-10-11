@@ -36,8 +36,8 @@ const title = document.querySelector('#music-title')
 const progress = document.querySelector('.progress')
 const progressCtn = document.querySelector('.progress-container')
 const music_time = document.querySelector(".current-time")
-let curr_time = document.querySelector(".music-time");
-let total_duration = document.querySelector(".music-duration");
+const curr_time = document.querySelector(".music-time");
+const total_duration = document.querySelector(".music-duration");
 
 function playSong() {
   musicContainer.classList.add('play')
@@ -98,7 +98,7 @@ function DurTime (e) {
 	get_sec (currentTime,sec);
 
 	// change currentTime DOM
-	currTime.innerHTML = min +':'+ sec;
+	music_time.innerHTML = min +':'+ sec;
 
 	// define minutes duration
 	let min_d = (isNaN(duration) === true)? '0':
@@ -132,6 +132,10 @@ function DurTime (e) {
 		
 };
 
+function musicDuration() {
+  var x = document.getElementById("audio").duration;
+  document.getElementById("total_duration").innerHTML = x;
+}
 //Event listeners
 playBtn.addEventListener('click', () => {
   const isPlaying = musicContainer.classList.contains('play')
@@ -152,3 +156,4 @@ progressCtn.addEventListener('click', setProgress);
 // Time of song
 audio.addEventListener('timeupdate',DurTime);
 audio.addEventListener('timeupdate',countercurrent)
+console.log(musicDuration())

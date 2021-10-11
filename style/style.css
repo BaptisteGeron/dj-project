@@ -50,7 +50,7 @@ table {
   border-spacing: 0;
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 320px) {
   footer .abt {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -137,7 +137,7 @@ footer h5 {
   padding: 1em 0;
 }
 
-main {
+.discography {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,12 +150,12 @@ main {
           justify-content: center;
 }
 
-main figure {
+.discography figure {
   text-align: center;
   padding: 2em 2em;
 }
 
-main figure img {
+.discography figure img {
   width: 370px;
 }
 
@@ -288,5 +288,71 @@ html {
   to {
     opacity: 1;
   }
+}
+
+.music_player {
+  position: relative;
+  margin: 0 20px;
+  background-color: #282828;
+}
+
+.music_player #music-title {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 1;
+  fill: transparent;
+  stroke: #ffffff;
+  stroke-width: 1px;
+}
+
+.music_player .player-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.music_player .action-btn {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: #d2d6db;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  margin: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  text-indent: 110%;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-transition: none;
+  transition: none;
+  white-space: nowrap;
+  width: 2.125em;
+}
+
+.music_player .progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 50%;
+}
+
+.music_player .progress {
+  background-color: #444444;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: width 0.1s linear;
+  transition: width 0.1s linear;
 }
 /*# sourceMappingURL=style.css.map */
