@@ -86,3 +86,41 @@ function initializeClock(id, endtime) {
 
 const deadline = new Date(Date.parse(new Date()) + 66 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);
+
+//Player
+var music = document.querySelector('.music-element')
+var playBtn = document.querySelector('.play')
+var seekbar = document.querySelector('.seekbar')
+var currentTime = document.querySelector('.current-time')
+var duration = document.querySelector('.duration')
+
+function handlePlay() {
+    if (music.paused) {
+        music.play();
+        playBtn.className = 'pause'
+        playBtn.innerHTML = '<img class="material-icons" src="img/icons/pause.svg" alt="pause">'
+    } else {
+        music.pause();
+        playBtn.className = 'play'
+        playBtn.innerHTML = '<img class="material-icons" src="img/icons/play.svg" alt="play">'
+    }
+    music.addEventListener('ended', function () {
+        playBtn.className = 'play'
+        playBtn.innerHTML = '<img class="material-icons" src="img/icons/play.svg" alt="play">'
+        music.currentTime = 0
+    });
+}
+
+music.onloadeddata = function () {
+    seekbar.max = music.duration
+    var ds = parseInt(music.duration % 60)
+    var dm = parseInt((music.duration / 60) % 60)
+    duration.innerHTML = dm + ':' + ds
+}
+music.ontimeupdate = function () { seekbar.value = music.currentTime }
+handleSeekBar = function () { music.currentTime = seekbar.value }
+music.addEventListener('timeupdate', function () {
+    var cs = parseInt(music.currentTime % 60)
+    var cm = parseInt((music.currentTime / 60) % 60)
+    currentTime.innerHTML = cm + ':' + cs
+}, false)
