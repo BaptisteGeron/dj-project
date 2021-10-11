@@ -55,17 +55,19 @@ const playBtn = document.querySelector('#play')
 const audio = document.querySelector('#audio')
 const title = document.querySelector('#music-title')
 const progress = document.querySelector('.progress')
-const progressCtn = document.querySelector('.progress-container')$
+const progressCtn = document.querySelector('.progress-container')
 
 function playSong() {
   musicContainer.classList.add('play')
   playBtn.querySelector('i.fas').classList.remove('fa-play')
   playBtn.querySelector('i.fas').classList.add('fa-pause')
+  audio.play()
 }
 function pauseSong() {
   musicContainer.classList.remove('play')
   playBtn.querySelector('i.fas').classList.remove('fa-pause')
   playBtn.querySelector('i.fas').classList.add('fa-play')
+  audio.pause()
 }
 //Event listeners
 playBtn.addEventListener('click', () => {
