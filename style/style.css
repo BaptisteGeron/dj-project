@@ -51,7 +51,10 @@ table {
   border-spacing: 0;
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 320px) {
+  footer .mainlogo {
+    padding-top: 10vh;
+  }
   footer .abt {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -78,13 +81,17 @@ table {
   }
 }
 
-@media screen and (min-width: 410px) {
+@media screen and (min-width: 320px) {
+  .mainlogo {
+    padding-top: 20vh;
+  }
   .about {
     padding: 0 1.5em;
+    padding-top: 10vh;
     padding-bottom: 3em;
   }
   .social {
-    padding: 0 0.5em;
+    padding: 0 2em;
   }
 }
 
@@ -110,7 +117,7 @@ footer a {
   text-decoration: none;
 }
 
-footer img {
+footer .sc_icon {
   padding: 2em 0;
   height: 20px;
 }
@@ -1059,7 +1066,7 @@ header h2 {
 .fanbase .fanImg {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "a b" "c d" "e f";
+      grid-template-areas: "a b" "c d" "e f";
 }
 
 .fanbase .fanImg #img1 {
