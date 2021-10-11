@@ -627,6 +627,12 @@ header h2 {
   color: white;
 }
 
+.line {
+  /*border-left-color: black;
+    border-left-width: 3px;
+    border-left-style: solid;*/
+}
+
 .line li {
   margin-left: 30px;
   margin-bottom: 3em;
