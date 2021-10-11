@@ -1234,4 +1234,50 @@ header h2 {
           filter: invert(1);
   height: 1em;
 }
+
+.suscribe {
+  width: 100%;
+  min-height: 300px;
+  background-image: url(/img/homepage-footer-background.jpg);
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.suscribe h2 {
+  font-size: 2em;
+  color: white;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  padding: 1em;
+  width: 100%;
+}
+
+.suscribe .mailField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5%;
+  width: 100%;
+}
+
+.suscribe .mailField input {
+  height: 2em;
+  width: 100%;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=style.css.map */
