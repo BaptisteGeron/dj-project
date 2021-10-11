@@ -12,29 +12,51 @@
     height: 1.5em;
     width: auto;
     fill: black;
-    margin: 1em;
+    filter: invert(1);
+    margin-left: 2em;
 }
 .illustration {
     height: auto;
-    width: 2em;
+    width: 40%;
     margin: 1em;
 }
-
+.button {
+    font-family: $poppins;
+    color: white;
+    background-color: purple;
+    border-radius: 10px;
+    padding: 1em;
+}
 .mainAbout {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0;
+    padding: 5em;
     .contactInfos {
         display: flex;
         gap: 5em;
-        padding: 5em;
         div{
         h2 {
             font-family: $poppins;
             font-size: 1.5em;
             padding-bottom: 1em;
-            border-bottom: 2px solid lightgrey;
+            
+        }
+        .line {
+            border-bottom: 3px solid lightgray;
+            width: 20%;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+        }
+        li {
+            padding-right: 3em;
+            padding-top:2.5em;
+        }
+        .socialList {
+            width: 100%;
         }
         p {
             font-family: $poppins;
