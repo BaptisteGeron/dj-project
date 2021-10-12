@@ -29,6 +29,10 @@
     margin-top: 3em;
     text-decoration: none;
 }
+.button:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+}
 .mainAbout {
     display: flex;
     flex-direction: column;
