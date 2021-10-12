@@ -138,7 +138,7 @@ footer h5 {
   padding: 1em 0;
 }
 
-main {
+.dico-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,12 +151,12 @@ main {
           justify-content: center;
 }
 
-main figure {
+.dico-main figure {
   text-align: center;
   padding: 2em 2em;
 }
 
-main figure img {
+.dico-main figure img {
   width: 370px;
 }
 
@@ -183,6 +183,7 @@ html {
   background-color: #555;
 }
 
+/* SPONSORS & PARTNERS */
 @media screen and (max-width: 320px) {
   .carousel_box {
     height: 240px;
@@ -242,6 +243,178 @@ html {
 .carousel_box .sponsors {
   text-align: center;
   color: white;
+}
+
+/* BUY TICKET INFO */
+@media screen and (max-width: 320px) {
+  .info-ticket-column {
+    width: 340px;
+    height: 400px;
+    padding: 2em 1em;
+  }
+  .info-ticket-column .price_tag {
+    margin-top: 15px;
+  }
+  .info-ticket-column .price_tag .dollar {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  .info-ticket-column .price_tag .ticket-price {
+    font-size: 110px;
+  }
+  .info-ticket-column .get-ticket {
+    margin-top: 12px;
+    font-size: 15px;
+  }
+  .info-ticket-column .get-ticket li {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .info-ticket-column {
+    width: 340px;
+    height: 400px;
+    padding: 2em 1em;
+  }
+  .info-ticket-column .price_tag {
+    margin-top: 12px;
+  }
+  .info-ticket-column .price_tag .dollar {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  .info-ticket-column .price_tag .ticket-price {
+    font-size: 60px;
+  }
+  .info-ticket-column .get-ticket {
+    margin-top: 12px;
+    font-size: 15px;
+  }
+  .info-ticket-column .get-ticket li {
+    margin-top: 5px;
+  }
+  .mid_tag {
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .info-ticket-column {
+    width: 340px;
+    height: 400px;
+    padding: 2em 1em;
+  }
+  .info-ticket-column .price_tag {
+    margin-top: 15px;
+  }
+  .info-ticket-column .price_tag .dollar {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  .info-ticket-column .price_tag .ticket-price {
+    font-size: 110px;
+  }
+  .info-ticket-column .get-ticket {
+    margin-top: 50px;
+    font-size: 15px;
+  }
+  .info-ticket-column .get-ticket li {
+    margin-top: 5px;
+  }
+  .info-ticket-column .buy-ticket {
+    margin-top: 40px;
+    padding: 18px 35px;
+    width: 5em;
+  }
+  .mid_tag {
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+  }
+}
+
+.tickets-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.tickets-container .info-ticket-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tickets-container .info-ticket-column .ticket-type {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.tickets-container .info-ticket-column .price_tag {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.tickets-container .info-ticket-column .price_tag .dollar {
+  font-weight: 600;
+}
+
+.tickets-container .info-ticket-column .price_tag .ticket-price {
+  font-weight: 400;
+  color: #444444;
+}
+
+.tickets-container .info-ticket-column .get-ticket {
+  font-weight: 300;
+  color: #444444;
+}
+
+.tickets-container .info-ticket-column .buy-ticket {
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 18px 35px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 5em;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tickets-container .info-ticket-column .buy-ticket:hover {
+  background-color: #8121e0;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 header {
