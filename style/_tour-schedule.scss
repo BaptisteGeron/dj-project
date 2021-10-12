@@ -1,12 +1,12 @@
 .mainTourSchedule {
     background-color: #eeeff4;
-    padding: 5em;
     width: 100%;
+    padding: 0;
 }
 .tourContainer {
     width: 75%;
     height: auto;
-    margin: auto;
+    margin: 5em auto;
     border-radius: 9px;
     background-color: white;
     .marginDiv {
@@ -53,9 +53,6 @@
     }
 }
 .line {
-    /*border-left-color: black;
-    border-left-width: 3px;
-    border-left-style: solid;*/
     li {
         margin-left: 30px;
         margin-bottom: 3em;
@@ -117,13 +114,13 @@
 
 @media screen and (max-width: 768px) {
     .mainTourSchedule {
-        padding: 1em;
+        padding: 0;
     }
     .eventItem {
         flex-direction: column;
     }
     .tourContainer {
-        width: 100%;
+        width: 97%;
     }
 }
 
