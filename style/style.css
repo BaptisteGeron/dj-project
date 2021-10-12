@@ -1087,7 +1087,7 @@ header h2 {
   max-width: 45%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "a b" "c d" "e f";
+      grid-template-areas: "a b" "c d" "e f";
 }
 
 .fanbase .fanImg #img1 {
