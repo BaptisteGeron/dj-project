@@ -559,6 +559,11 @@ header h2 {
   background-size: cover;
 }
 
+.musicClock {
+  width: 75%;
+  margin: auto;
+}
+
 .mainTourSchedule {
   background-color: #eeeff4;
   padding: 5em;
