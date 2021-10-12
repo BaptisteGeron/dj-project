@@ -1280,4 +1280,10 @@ header h2 {
   width: 100%;
   border-radius: 5px;
 }
+
+.suscribe .mailField #suscribe {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 /*# sourceMappingURL=style.css.map */
