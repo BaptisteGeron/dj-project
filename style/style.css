@@ -1064,6 +1064,7 @@ header h2 {
 }
 
 .fanbase .fanImg {
+  max-width: 45%;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "a b" "c d" "e f";
@@ -1093,6 +1094,11 @@ header h2 {
   grid-area: "f";
 }
 
+.fanbase .fanImg .fanImgItem {
+  width: 50%;
+  height: auto;
+}
+
 .fanbase h2 {
   font-size: 3em;
   font-weight: 600;
@@ -1101,6 +1107,26 @@ header h2 {
 .fanbase h3 {
   font-size: 2em;
   font-weight: 600;
+}
+
+.fanbase .fanOffers {
+  height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.fanbase .dicover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .illustratinwhite {
