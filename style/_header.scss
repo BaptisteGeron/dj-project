@@ -110,10 +110,7 @@ display: none;
 
 @media  screen and (max-width: 768px) {
     .topNav {
-    /*position: fixed;
-    overflow: visible;
-    width: 100%;
-    z-index: 3;*/
+        min-height: 3rem;
         background-color: $Darkgrey;
         justify-content: flex-start;
         .navItems {
@@ -188,7 +185,9 @@ filter: invert(1);
         }
     }
     .logo {
-        margin-left: 100px;
+        margin-left: 20%;
+        max-width: 75%;
+        height: auto;
     }
     
     .menuToggle {

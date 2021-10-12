@@ -1,3 +1,4 @@
+
 .contact {
     height: 1em;
     width: auto;
@@ -17,7 +18,7 @@
 }
 .illustration {
     height: auto;
-    width: 40%;
+    width: 20%;
     margin: 1em;
 }
 .button {
@@ -33,14 +34,15 @@
     transform: scale(1.1);
     transition: ease-in-out;
 }
+#aboutDJ {
+    width: fit-content;
+}
 .mainAbout {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 5em;
     .contactInfos {
+        width: 100%;
         display: flex;
         gap: 5em;
+        padding: 5em;
         div{
         h2 {
             font-family: $poppins;
@@ -74,10 +76,12 @@
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
+            margin-bottom: 15px;
         }
         #signature {
             height: 4em;
             width: auto;
+            text-align: right;
         }
     }
     }
@@ -112,7 +116,7 @@
         
         
         .dicover {
-            width: 30%;
+            width: 25%;
             height: auto;
             text-align: left;
             display: flex;
@@ -125,8 +129,19 @@
     }
     .latestReleases {
         padding: 4em;
+        figure {
+            width: 25%;
+            padding: 0;
+            img {
+                width: 90%;
+                height: auto;
+            }
+        }
+        .listRelease {
+            display: flex;
+            justify-content: space-between;
+        }
         h2 {
-            width: 100%;
             font-family: $poppins;
             font-size: 2em;
             font-weight: 800;
@@ -141,10 +156,6 @@
             font-family: $poppins;
             line-height: 1.5em;
         }
-        div {
-            display: flex;
-            justify-content:center;
-        }
         h4 {
             font-family: $poppins;
             line-height: 1.5em;
@@ -158,3 +169,96 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+.contactInfos {
+    flex-direction: column;
+}
+#aboutDJ {
+    max-width: 100%;
+}
+.mainAbout {
+    .contactInfos {
+        width: 100%;
+        display: flex;
+        gap: 5em;
+        padding: 1em;
+        figure {
+            width: 75%;
+    }
+}
+    .latestReleases {
+        padding: 1em;
+
+        p {
+            width: 75%;
+            text-align: center;
+            margin: auto;
+            font-family: $poppins;
+            line-height: 1.5em;
+        }
+        .listRelease {
+            display: flex;
+            flex-wrap: wrap;
+        }
+         .release {
+            width: 40%;
+        }
+    }
+    .discoverDJ {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5%;
+        padding: 0.5em;
+        .dicover{
+            flex-direction: row;
+            width: 40%;
+            padding: 0;
+            text-align: center;
+            img{
+                margin: auto;
+            }
+        }
+    }
+    }
+}
+
+@media screen and (max-width: 320px) {
+.listRelease {
+    flex-direction: column;
+}
+.mainAbout {
+    .contactInfos {
+        width: 100%;
+        display: flex;
+        gap: 5em;
+        padding: 0.5em;
+    }
+    .latestReleases {
+        padding: 0.5em;
+        p {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            font-family: $poppins;
+            line-height: 1.5em;
+        }
+        .release {
+            width: 100%;
+        }
+    }
+    .discoverDJ {
+        flex-direction: column;
+        padding: 0.5em;
+        .dicover{
+            flex-direction: column;
+            width: 90%;
+            padding: 0;
+            text-align: center;
+            img{
+                margin: auto;
+            }
+        }
+    }
+}
+    }
