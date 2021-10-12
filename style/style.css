@@ -559,6 +559,35 @@ header h2 {
   background-size: cover;
 }
 
+.musicClock {
+  width: 75%;
+  margin: auto;
+  position: relative;
+  bottom: -50px;
+  overflow: visible;
+}
+
+#music-title {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 6em;
+  line-height: 1;
+  fill: transparent;
+  stroke: #ffffff;
+  stroke-width: 1px;
+  overflow: visible;
+}
+
+.songTitle h5 {
+  position: relative;
+  bottom: -25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+  color: white;
+}
+
 .mainTourSchedule {
   background-color: #eeeff4;
   padding: 5em;
@@ -958,11 +987,17 @@ header h2 {
   font-weight: 900;
   background-color: black;
   color: white;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 100;
   text-align: center;
   font-size: 4em;
   border-radius: 10px;
+  width: 100%;
 }
 
 #clockdiv > div {
@@ -979,6 +1014,32 @@ header h2 {
   padding-top: 5px;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+#nextEvent {
+  width: 2em;
+  height: 100%;
+  margin: auto;
+}
+
+#nextEvent h3 {
+  font-weight: 400;
+  font-size: 0.6em;
+}
+
+#nextEvent p {
+  font-size: 0.1em;
+}
+
+#buyButton {
+  font-size: 0.2em;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  margin-left: 0.5em;
+  background-color: purple;
+  border-radius: 10px;
 }
 
 .indexAbout {

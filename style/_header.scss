@@ -216,6 +216,31 @@ filter: invert(1);
     background-position: center;
     background-size: cover;
 }
+.musicClock {
+    width: 75%;
+    margin: auto;
+    position: relative;
+    bottom: -50px;
+    overflow: visible;
 
+}
+#music-title {
+    width: 100%;
+    font-family: $poppins;
+    font-weight: 700;
+    font-size: 6em;
+    line-height: 1;
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 1px;
+    overflow: visible;
+  }
 
-
+  .songTitle h5 {
+      position: relative;
+      bottom: -25px;
+      font-family: $poppins;
+      font-size: 3em;
+      font-weight: 600;
+      color: white;
+  }
