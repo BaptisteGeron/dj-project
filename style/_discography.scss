@@ -1,4 +1,3 @@
-.dico-main {
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .disco_album {
     flex: 0 0 50%;
@@ -39,17 +38,5 @@
       font-weight: 600;
       line-height: 1.5em;
     }
-    h4 {
-      font-family: $poppins;
-      line-height: 1.5em;
-      padding: 1em;
-      
   }
-  h4::first-line {
-      font-size: 1.5em;
-      font-weight: 600;
-      line-height: 1.5em;
-  }
-  }
-}
 }

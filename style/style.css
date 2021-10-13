@@ -200,7 +200,7 @@ footer h5 {
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .dico-main .disco_album {
+  .disco_album {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
@@ -209,7 +209,7 @@ footer h5 {
 }
 
 @media screen and (min-width: 768px) {
-  .dico-main .disco_album {
+  .disco_album {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%;
@@ -217,7 +217,7 @@ footer h5 {
   }
 }
 
-.dico-main .disco_ctn {
+.disco_ctn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,38 +230,26 @@ footer h5 {
           justify-content: center;
 }
 
-.dico-main .disco_ctn .disco_album {
+.disco_ctn .disco_album {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
   padding: 2em 2em;
 }
 
-.dico-main .disco_ctn .disco_album .album_cvr {
+.disco_ctn .disco_album .album_cvr {
   display: inline-block;
   max-width: 100%;
   height: auto;
 }
 
-.dico-main .disco_ctn .disco_album h4 {
+.disco_ctn .disco_album h4 {
   font-family: "Poppins", sans-serif;
   line-height: 1.5em;
   padding: 1em;
 }
 
-.dico-main .disco_ctn .disco_album h4::first-line {
-  font-size: 1.5em;
-  font-weight: 600;
-  line-height: 1.5em;
-}
-
-.dico-main .disco_ctn .disco_album h4 {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.5em;
-  padding: 1em;
-}
-
-.dico-main .disco_ctn .disco_album h4::first-line {
+.disco_ctn .disco_album h4::first-line {
   font-size: 1.5em;
   font-weight: 600;
   line-height: 1.5em;
@@ -1582,7 +1570,7 @@ header h2 {
   max-width: 45%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "a b" "c d" "e f";
+      grid-template-areas: "a b" "c d" "e f";
 }
 
 .fanbase .fanImg #img1 {
@@ -1697,7 +1685,7 @@ header h2 {
     padding: 0.5em;
   }
   .fanbase .fanImg {
-        grid-template-areas: "a" "b" "c" "d" "e" "f";
+        grid-template-areas: "a" "b" "c" "d" "e" "f";
     max-width: 100%;
     width: 100%;
   }
@@ -2170,15 +2158,96 @@ header h2 {
 }
 
 .homegal {
-  width: 33%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .homegalbot {
-  width: 49%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
 }
 
-/* .indexGallery > * {
-  flex: 1 1 10%;
+@media screen and (max-width: 768px) {
+  .release_banner {
+    height: 300px;
+    margin: 55px 0;
+  }
+  .release_banner .title_release_anner {
+    font-size: 24px;
+  }
 }
- */
+
+@media screen and (min-width: 768px) {
+  .release_banner {
+    height: 400px;
+    margin: 80px 0;
+  }
+  .release_banner .title_release_anner {
+    font-size: 36px;
+  }
+}
+
+.release_banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-image: url(/img/homepage-latest-releases-background.jpg);
+  background-size: cover;
+}
+
+.release_banner .title_release_anner {
+  color: #fff;
+  font-weight: 500;
+}
+
+.release_banner .discography_link {
+  text-transform: uppercase;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top: 40px;
+  background-color: #8121e0;
+  padding: 18px 35px;
+  border-radius: 5px;
+  width: 160px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.release_banner .discography_link:hover {
+  background-color: #ffffff;
+  color: #8121e0;
+}
+
+.lts_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  color: black;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.lts_describtion {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
 /*# sourceMappingURL=style.css.map */

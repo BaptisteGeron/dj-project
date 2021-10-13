@@ -18,7 +18,8 @@
         "_fanbase.scss",
         "_player.scss",
         "_suscribe.scss",
-        "_homegallery.scss"
+        "_homegallery.scss",
+        "_idxlatestRelease.scss"
     ],
     "names": [],
     "file": "style.css"
