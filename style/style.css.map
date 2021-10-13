@@ -19,7 +19,8 @@
         "_player.scss",
         "_suscribe.scss",
         "_homegallery.scss",
-        "_idxlatestRelease.scss"
+        "_idxlatestRelease.scss",
+        "_recentNews.scss"
     ],
     "names": [],
     "file": "style.css"
