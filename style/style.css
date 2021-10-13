@@ -1554,7 +1554,6 @@ header h2 {
 }
 
 .fanbase {
-  width: 100%;
   background-color: black;
   font-family: "Poppins", sans-serif;
   font-size: 1em;
@@ -1625,12 +1624,14 @@ header h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-top: 1em;
 }
 
 .fanbase .dicover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 1em;
 }
 
 .illustratinwhite {

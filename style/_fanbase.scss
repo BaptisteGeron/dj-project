@@ -1,5 +1,4 @@
 .fanbase {
-    width: 100%;
     background-color: black;
     font-family: $poppins;
     font-size: 1em;
@@ -51,9 +50,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        padding-top: 1em;
     }
     .dicover {
         display: flex;
+        padding-top: 1em;
     }
 }
 .illustratinwhite {
