@@ -36,23 +36,6 @@
 #indexAboutDj {
     border-radius: 10px;  
 }
-#indexAboutDj:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background-color: $Purple;
-}
-
-#indexAboutDj:after {
-    content: "hello";
-    background-color: chartreuse;
-    display: block;
-    position: absolute;
-    margin-bottom: 5px;
-    margin-right: 5px;
-}
 
 @media screen and (max-width:768px) {
     .indexAbout {
