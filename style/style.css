@@ -1539,15 +1539,15 @@ header h2 {
   background-color: #8121e0;
 }
 
-#indexAboutDj:after {
-  content: "hello";
-  background-color: chartreuse;
-  display: block;
-  position: absolute;
-  margin-bottom: 5px;
-  margin-right: 5px;
+/*#indexAboutDj:after {
+    content: "hello";
+    background-color: chartreuse;
+    display: block;
+    position: absolute;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
-
+*/
 @media screen and (max-width: 768px) {
   .indexAbout {
     -webkit-box-orient: vertical;
