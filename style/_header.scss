@@ -173,6 +173,17 @@ height: 2em;
 width: auto;
 filter: invert(1);
     }
+    #music-title {
+        width: 100%;
+        font-family: $poppins;
+        font-weight: 700;
+        font-size: 4em;
+        line-height: 1;
+        fill: transparent;
+        stroke: #ffffff;
+        stroke-width: 1px;
+        overflow: visible;
+      }
 }
 
 
@@ -216,7 +227,7 @@ filter: invert(1);
     background-size: cover;
 }
 .musicClock {
-    width: 75%;
+    width: 85%;
     margin: auto;
     position: relative;
     bottom: -50px;
@@ -227,7 +238,7 @@ filter: invert(1);
     width: 100%;
     font-family: $poppins;
     font-weight: 700;
-    font-size: 6em;
+    font-size: 2em;
     line-height: 1;
     fill: transparent;
     stroke: #ffffff;
@@ -239,7 +250,7 @@ filter: invert(1);
       position: relative;
       bottom: -25px;
       font-family: $poppins;
-      font-size: 3em;
+      font-size: 1em;
       font-weight: 600;
       color: white;
   }

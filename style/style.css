@@ -474,6 +474,17 @@ header h2 {
     -webkit-filter: invert(1);
             filter: invert(1);
   }
+  #music-title {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 1;
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 1px;
+    overflow: visible;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -520,7 +531,7 @@ header h2 {
 }
 
 .musicClock {
-  width: 75%;
+  width: 85%;
   margin: auto;
   position: relative;
   bottom: -50px;
@@ -531,7 +542,7 @@ header h2 {
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 6em;
+  font-size: 2em;
   line-height: 1;
   fill: transparent;
   stroke: #ffffff;
@@ -543,7 +554,7 @@ header h2 {
   position: relative;
   bottom: -25px;
   font-family: "Poppins", sans-serif;
-  font-size: 3em;
+  font-size: 1em;
   font-weight: 600;
   color: white;
 }
@@ -1070,19 +1081,30 @@ header h2 {
           justify-content: center;
   font-weight: 100;
   text-align: center;
-  font-size: 4em;
+  font-size: 3.5em;
   border-radius: 10px;
   width: 100%;
 }
 
+.clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 #clockdiv > div {
   padding: 0.2em;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 #clockdiv div > span {
   font-weight: 400;
-  display: inline-block;
+  /*display: inline-block;*/
+  padding: 0.2em;
 }
 
 .smalltext {
@@ -1113,8 +1135,39 @@ header h2 {
   color: white;
   padding: 15px;
   margin-left: 0.5em;
-  background-color: purple;
+  background-color: #8121e0;
   border-radius: 10px;
+  line-break: none;
+}
+
+@media screen and (max-width: 768px) {
+  #clockdiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #nextEvent {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #clockdiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #sechide {
+    display: none;
+  }
+  #nextEvent {
+    width: 100%;
+  }
 }
 
 .indexAbout {
@@ -1174,7 +1227,7 @@ header h2 {
   position: absolute;
   width: 500px;
   height: 500px;
-  background-color: purple;
+  background-color: #8121e0;
 }
 
 #indexAboutDj:after {
@@ -1184,6 +1237,23 @@ header h2 {
   position: absolute;
   margin-bottom: 5px;
   margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .indexAbout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 4em;
+    padding-bottom: 1em;
+    gap: 1em;
+  }
+  #indexAboutDj {
+    max-width: 100%;
+  }
 }
 
 .fanbase {
@@ -1233,6 +1303,7 @@ header h2 {
 .fanbase .fanImg .fanImgItem {
   width: 50%;
   height: auto;
+  text-align: center;
 }
 
 .fanbase h2 {
@@ -1270,6 +1341,81 @@ header h2 {
   height: auto;
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+
+@media screen and (max-width: 768px) {
+  .fanbase {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+    padding: 0.5em;
+  }
+  .fanbase .fanImg {
+    width: 100%;
+    max-width: 100%;
+  }
+  .fanOffers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 1em;
+  }
+  .fanOffers .dicover {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 312px) {
+  .fanbase {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+    padding: 0.5em;
+  }
+  .fanbase .fanImg {
+        grid-template-areas: "a" "b" "c" "d" "e" "f";
+    max-width: 100%;
+    width: 100%;
+  }
+  .fanbase .fanImg .fanImgItem {
+    width: 100%;
+    max-width: 300px;
+  }
+  .fanOffers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 1em;
+  }
+  .fanOffers .dicover {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 1em;
+  }
 }
 
 *::-moz-selection {
@@ -1402,6 +1548,242 @@ header h2 {
   -webkit-filter: invert(1);
           filter: invert(1);
   height: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  *::-moz-selection {
+    background-color: unset;
+  }
+  *::selection {
+    background-color: unset;
+  }
+  .player {
+    position: relative;
+    margin: auto;
+    /*transform: translate(-50%, -50%);*/
+    width: 70%;
+    height: 100px;
+    border-radius: 15px;
+    background-color: none;
+  }
+  .player input[type="range"] {
+    -webkit-appearance: none !important;
+    margin: 0px;
+    padding: 0px;
+    background: #4747476e;
+    height: 5px;
+    width: 150px;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .player input[type="range"]::-ms-fill-lower {
+    background: #ece9e6;
+  }
+  .player input[type="range"]::-ms-fill-upper {
+    background: #ece9e6;
+  }
+  .player input[type="range"]::-moz-range-track {
+    border: none;
+    background: #ece9e6;
+  }
+  .player input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: #ffffff;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    -webkit-box-shadow: -100vw 0 0 100vw #faf9f8;
+            box-shadow: -100vw 0 0 100vw #faf9f8;
+  }
+  .player input[type="range"]::-moz-range-thumb {
+    background: #ff3677;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+  }
+  .player input[type="range"]::-ms-thumb {
+    -webkit-appearance: none !important;
+    background: #ff3677;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+  }
+  .player .music-box {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .player .music-box input[type="range"] {
+    height: 5px;
+    width: 300px;
+    margin: 0 0 10px 0;
+  }
+  .player .music-box input[type="range"]::-webkit-slider-thumb {
+    height: 5px;
+    width: 7px;
+  }
+  .player .music-box .current-time {
+    position: absolute;
+    right: -35px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  .player .music-box .duration {
+    position: absolute;
+    right: -80px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  .player .music-box .play,
+  .player .music-box .pause {
+    position: absolute;
+    left: -5px;
+    top: -2px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: none;
+    cursor: pointer;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .material-icons {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+    height: 1em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  *::-moz-selection {
+    background-color: unset;
+  }
+  *::selection {
+    background-color: unset;
+  }
+  .player {
+    position: relative;
+    margin: auto;
+    /*transform: translate(-50%, -50%);*/
+    width: 70%;
+    height: 100px;
+    border-radius: 15px;
+    background-color: none;
+  }
+  .player input[type="range"] {
+    -webkit-appearance: none !important;
+    margin: 0px;
+    padding: 0px;
+    background: #4747476e;
+    height: 5px;
+    width: 150px;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .player input[type="range"]::-ms-fill-lower {
+    background: #ece9e6;
+  }
+  .player input[type="range"]::-ms-fill-upper {
+    background: #ece9e6;
+  }
+  .player input[type="range"]::-moz-range-track {
+    border: none;
+    background: #ece9e6;
+  }
+  .player input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: #ffffff;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    -webkit-box-shadow: -100vw 0 0 100vw #faf9f8;
+            box-shadow: -100vw 0 0 100vw #faf9f8;
+  }
+  .player input[type="range"]::-moz-range-thumb {
+    background: #ff3677;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+  }
+  .player input[type="range"]::-ms-thumb {
+    -webkit-appearance: none !important;
+    background: #ff3677;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+  }
+  .player .music-box {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .player .music-box input[type="range"] {
+    height: 5px;
+    width: 90px;
+    margin: 0 0 10px 0;
+  }
+  .player .music-box input[type="range"]::-webkit-slider-thumb {
+    height: 5px;
+    width: 7px;
+  }
+  .player .music-box .current-time {
+    position: absolute;
+    right: -35px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  .player .music-box .duration {
+    position: absolute;
+    right: -80px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  .player .music-box .play,
+  .player .music-box .pause {
+    position: absolute;
+    left: -5px;
+    top: -2px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: none;
+    cursor: pointer;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .material-icons {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+    height: 1em;
+  }
 }
 
 .suscribe {
