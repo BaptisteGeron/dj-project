@@ -130,21 +130,73 @@ footer h5 {
   font-size: 12px;
 }
 
+@media screen and (max-width: 320px) {
+  .gallery {
+    margin: 3em 0;
+  }
+  .gallery .img_gallery {
+    max-width: 100%;
+  }
+  .gallery .img_gallery .img_src {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .gallery {
+    text-align: center;
+    margin: 3em 0;
+  }
+  .gallery .img_gallery {
+    max-width: 33.333333%;
+    min-height: 1px;
+  }
+  .gallery .img_gallery .img_src {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    margin: 3.5em 0;
+  }
+  .gallery .img_gallery {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+    min-height: 1px;
+  }
+  .gallery .img_gallery .img_src {
+    width: 100%;
+  }
+}
+
+.gallery_ctn {
+  width: auto;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 .gallery {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.gallery img {
-  width: 20em;
-  height: auto;
-  padding: 1em 0;
+.gallery .img_gallery {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.gallery .img_gallery .img_src {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 main {
@@ -1273,7 +1325,7 @@ header h2 {
   max-width: 45%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "a b" "c d" "e f";
+      grid-template-areas: "a b" "c d" "e f";
 }
 
 .fanbase .fanImg #img1 {
@@ -1388,7 +1440,12 @@ header h2 {
     padding: 0.5em;
   }
   .fanbase .fanImg {
-        grid-template-areas: "a" "b" "c" "d" "e" "f";
+        grid-template-areas: "a"
+ "b"
+ "c"
+ "d"
+ "e"
+ "f";
     max-width: 100%;
     width: 100%;
   }
@@ -1838,4 +1895,25 @@ header h2 {
       align-self: center;
   margin-top: 0;
 }
+
+.indexGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.homegal {
+  width: 33%;
+}
+
+.homegalbot {
+  width: 49%;
+}
+
+/* .indexGallery > * {
+  flex: 1 1 10%;
+}
+ */
 /*# sourceMappingURL=style.css.map */

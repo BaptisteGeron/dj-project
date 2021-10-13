@@ -17,7 +17,8 @@
         "_indexabout.scss",
         "_fanbase.scss",
         "_player.scss",
-        "_suscribe.scss"
+        "_suscribe.scss",
+        "_homegallery.scss"
     ],
     "names": [],
     "file": "style.css"
