@@ -107,6 +107,19 @@ display: none;
         font-weight: 600;
     }
 }
+.musicClock {
+#music-title {
+    width: 100%;
+    font-family: $poppins;
+    font-weight: 700;
+    font-size: 6em;
+    line-height: 1;
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 1px;
+    overflow: visible;
+  }
+}
 
 @media  screen and (max-width: 768px) {
     .topNav {
@@ -173,6 +186,8 @@ height: 2em;
 width: auto;
 filter: invert(1);
     }
+
+.musicClock {
     #music-title {
         width: 100%;
         font-family: $poppins;
@@ -184,10 +199,42 @@ filter: invert(1);
         stroke-width: 1px;
         overflow: visible;
       }
+      .songTitle h5 {
+        position: relative;
+        bottom: -25px;
+        font-family: $poppins;
+        font-size: 1em;
+        font-weight: 600;
+        color: white;
+    }
+    }
 }
 
 
 @media  screen and (max-width: 320px) {
+    .musicClock {
+        #music-title {
+            width: 100%;
+            font-family: $poppins;
+            font-weight: 700;
+            font-size: 2em;
+            line-height: 1;
+            fill: transparent;
+            stroke: #ffffff;
+            stroke-width: 1px;
+            overflow: visible;
+          }
+          .songTitle h5 {
+            position: relative;
+            bottom: -25px;
+            font-family: $poppins;
+            font-size: 1em;
+            font-weight: 600;
+            color: white;
+        }
+        }
+    
+    
     .topNav {
         background-color: $Darkgrey;
         justify-content: flex-start;
@@ -234,6 +281,8 @@ filter: invert(1);
     overflow: visible;
 
 }
+
+
 #music-title {
     width: 100%;
     font-family: $poppins;
@@ -250,7 +299,8 @@ filter: invert(1);
       position: relative;
       bottom: -25px;
       font-family: $poppins;
-      font-size: 1em;
+      font-size: 3em;
       font-weight: 600;
       color: white;
   }
+
