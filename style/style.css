@@ -667,6 +667,27 @@ header h2 {
   font-weight: 600;
 }
 
+#music-title {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 6em;
+  line-height: 1;
+  fill: transparent;
+  stroke: #ffffff;
+  stroke-width: 1px;
+  overflow: visible;
+}
+
+.songTitle h5 {
+  position: relative;
+  bottom: -25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
   .topNav {
     min-height: 3rem;

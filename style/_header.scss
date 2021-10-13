@@ -108,6 +108,27 @@ display: none;
     }
 }
 
+#music-title {
+    width: 100%;
+    font-family: $poppins;
+    font-weight: 700;
+    font-size: 6em;
+    line-height: 1;
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 1px;
+    overflow: visible;
+  }
+
+  .songTitle h5 {
+      position: relative;
+      bottom: -25px;
+      font-family: $poppins;
+      font-size: 3em;
+      font-weight: 600;
+      color: white;
+  }
+
 @media  screen and (max-width: 768px) {
     .topNav {
         min-height: 3rem;
