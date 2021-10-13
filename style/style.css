@@ -2148,6 +2148,19 @@ header h2 {
   margin-top: 0;
 }
 
+@media screen and (max-width: 312px) {
+  .suscribe .mailField {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1em;
+  }
+  .suscribe .mailField input {
+    width: 80%;
+  }
+}
+
 .indexGallery {
   display: -webkit-box;
   display: -ms-flexbox;
