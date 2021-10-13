@@ -42,7 +42,7 @@
     position: absolute;
     width: 500px;
     height: 500px;
-    background-color: purple;
+    background-color: $Purple;
 }
 
 #indexAboutDj:after {
@@ -52,4 +52,18 @@
     position: absolute;
     margin-bottom: 5px;
     margin-right: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .indexAbout {
+        flex-direction: column;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        padding-top: 4em;
+        padding-bottom: 1em;
+        gap: 1em;
+    }
+    #indexAboutDj {
+        max-width: 100%;
+    }
 }
